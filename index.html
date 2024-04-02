@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <h1 class="TimeTrackingDashboard">Time Tracking Dashboard</h1>
+  <div class="container">
+    <div class="jeremyReport">
+      <div class="reportTop">
+        <img src="images/image-jeremy.png" alt="" id="jeremy-img">
+        <h4>Report for</h4>
+        <h1>Jeremy Robson</h1>
+      </div>
+      <div class="reportBottom">
+        <button class="daily-btn btn">Daily</button>
+        <button class="weekly-btn btn">Weekly</button>
+        <button class="monthly-btn btn">Monthly</button>
+      </div>
+    </div>
+    <div class="content">
+      <div class="work item">
+        <img src="images/icon-work.svg" alt="" class="icon">
+        <div class="work-content content-box">
+          <div class="card-top">
+            <h1 class="card-h">Work</h1>
+            <div class="hamburgur-menu">
+              <h4 class="hamburgur one">...</h4>
+              <div class="reveal">
+                <h4 class="hamburger-icons">Daily</h4>
+                <h4 class="hamburger-icons">Weekly</h4>
+                <h4 class="hamburger-icons">Monthly</h4>
+              </div>
+            </div>
+          </div>
+          <div class="hours daily">
+
+            <h1 class="current-hours">5hrs</h1> <!-- daily -->
+            <h4 class="previous-hour">Yesterday - 7hrs</h4> <!-- daily -->
+          </div>
+          <div class="hours weekly">
+
+            <h1 class="current-hours">32hrs</h1> <!-- weekly -->
+            <h4 class="previous-hour">Last Week - 36hrs</h4> <!-- weekly -->
+          </div>
+          <div class="hours monthly">
+            <h1 class="current-hours">103hrs</h1> <!-- monthly -->
+            <h4 class="previous-hour">Last Month - 128hrs</h4> <!-- monthly -->
+          </div>
+        </div>
+      </div>
+      <div class="play item">
+        <img src="images/icon-play.svg" alt="" class="icon">
+
+        <div class="play-content content-box">
+          <div class="card-top">
+            <h1 class="card-h">Play</h1>
+            <div class="hamburgur-menu">
+              <h4 class="hamburgur two">...</h4>
+              <div class="reveal">
+                <h4 class="hamburger-icons">Daily</h4>
+                <h4 class="hamburger-icons">Weekly</h4>
+                <h4 class="hamburger-icons">Monthly</h4>
+              </div>
+            </div>
+          </div>
+          <div class="hours daily">
+            <h1 class="current-hours">1hr</h1> <!-- daily -->
+            <h4 class="previous-hour">Yesterday - 2hrs</h4> <!-- daily -->
+          </div>
+          <div class="hours weekly">
+
+            <h1 class="current-hours">10hrs</h1> <!-- weekly -->
+            <h4 class="previous-hour"> Last Week - 8hrs</h4> <!-- weekly -->
+          </div>
+          <div class="hours monthly">
+
+            <h1 class="current-hours">23hrs</h1> <!-- monthly -->
+            <h4 class="previous-hour">Last Month - 29hrs</h4> <!-- monthly -->
+          </div>
+        </div>
+      </div>
+      <div class="study item">
+        <img src="images/icon-study.svg" alt="" class="icon">
+        <div class="study-content content-box">
+          <div class="card-top">
+            <h1 class="card-h">Study</h1>
+            <div class="hamburgur-menu">
+              <h4 class="hamburgur three">...</h4>
+              <div class="reveal">
+                <h4 class="hamburger-icons">Daily</h4>
+                <h4 class="hamburger-icons">Weekly</h4>
+                <h4 class="hamburger-icons">Monthly</h4>
+              </div>
+            </div>
+          </div>
+          
+          <div class="hours daily">
+            <h1 class="current-hours">0hrs</h1> <!-- daily -->
+            <h4 class="previous-hour">Yesterday - 1hr</h4> <!-- daily -->
+          </div>
+          <div class="hours weekly">
+            <h1 class="current-hours"> 4hrs <!-- weekly --></h1>
+            <h4 class="previous-hour"> Last Week - 7hrs</h4>
+
+            <!-- weekly -->
+          </div>
+
+          <div class="hours monthly">
+            <h1 class="current-hours"> 13hrs</h1> <!-- monthly -->
+            <h4 class="previous-hour">Last Month - 19hrs</h4>
+            <!-- monthly -->
+          </div>
+
+
+        </div>
+      </div>
+      <div class="exercise item">
+        <img src="images/icon-exercise.svg" alt="" class="icon">
+        <div class="exercise-content content-box">
+          <div class="card-top">
+            <h1 class="card-h">Exercise</h1>
+            <div class="hamburgur-menu">
+              <h4 class="hamburgur four">...</h4>
+              <div class="reveal">
+                <h4 class="hamburger-icons">Daily</h4>
+                <h4 class="hamburger-icons">Weekly</h4>
+                <h4 class="hamburger-icons">Monthly</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="hours daily">
+            <h1 class="current-hours"> 1hr</h1>
+            <h4 class="previous-hour">Yesterday - 1hr</h4>
+            <!-- daily -->
+            <!-- daily -->
+
+          </div>
+          <div class="hours weekly">
+
+            <h1 class="current-hours">4hrs</h1>
+            <h4 class="previous-hour"> Last Week - 5hrs</h4>
+            <!-- weekly -->
+            <!-- weekly -->
+          </div>
+          <div class="hours monthly">
+            <h1 class="current-hours"> 11hrs</h1>
+            <h4 class="previous-hour"> Last Month - 18hrs</h4>
+            <!-- monthly -->
+            <!-- monthly -->
+
+          </div>
+        </div>
+      </div>
+      <div class="social item">
+        <img src="images/icon-social.svg" alt="" class="icon">
+        <div class="social-content content-box">
+          <div class="card-top">
+            <h1 class="card-h">Social</h1>
+            <div class="hamburgur-menu">
+              <h4 class="hamburgur five">...</h4>
+              <div class="reveal">
+                <h4 class="hamburger-icons">Daily</h4>
+                <h4 class="hamburger-icons">Weekly</h4>
+                <h4 class="hamburger-icons">Monthly</h4>
+              </div>
+            </div>
+          </div>
+          <div class="hours daily">
+            <h1 class="current-hours">1hr</h1>
+            <h4 class="previous-hour">Yesterday - 3hrs</h4>
+            <!-- daily -->
+            <!-- daily -->
+          </div>
+          <div class="hours weekly">
+            <h1 class="current-hours">5hrs</h1>
+            <h4 class="previous-hour">Last Week - 10hrs</h4>
+            <!-- weekly -->
+            <!-- weekly -->
+
+          </div>
+          <div class="hours monthly">
+
+            <h1 class="current-hours">21hrs </h1>
+            <h4 class="previous-hour">Last Month - 23hrs</h4>
+          </div>
+          <!-- monthly -->
+          <!-- monthly -->
+        </div>
+      </div>
+      <div class="selfCare item">
+        <img src="images/icon-self-care.svg" alt="" class="icon">
+        <div class="selfCare-content content-box">
+          <div class="card-top">
+            <h1 class="card-h">Self Care</h1>
+            <div class="hamburgur-menu">
+              <h4 class="hamburgur six">...</h4>
+              <div class="reveal">
+                <h4 class="hamburger-icons">Daily</h4>
+                <h4 class="hamburger-icons">Weekly</h4>
+                <h4 class="hamburger-icons">Monthly</h4>
+              </div>
+            </div>
+          </div>
+          <div class="hours daily">
+            <h1 class="current-hours">0hrs</h1>
+            <h4 class="previous-hour">Yesterday - 1hr</h4>
+            <!-- daily -->
+            <!-- daily -->
+          </div>
+          <div class="hours weekly">
+            <h1 class="current-hours">2hrs</h1>
+            <h4 class="previous-hour"> Last Week - 2hrs</h4>
+            
+             <!-- weekly -->
+            <!-- weekly -->
+          </div>
+          <div class="hours monthly">
+            <h1 class="current-hours">7hrs</h1>
+            <h4 class="previous-hour"> Last Month - 11hrs</h4>
+
+             <!-- monthly -->
+            <!-- monthly -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Muhammad Faheem Khan</a>.
+  </div>
+</body>
+
+</html>

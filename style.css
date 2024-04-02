@@ -1,0 +1,301 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: hsl(226, 43%, 10%);
+    
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+    height: 80vh;
+    margin-top: 20px;
+}
+.jeremyReport{
+    width: 300px;
+    height: 420px;
+    /* outline: 1px solid black; */
+    border-radius: 10px;
+
+  
+}
+#jeremy-img{
+    width: 70px;
+    margin: 20px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+.jeremyReport h4{
+    margin: 10px 20px;
+    color: white;
+    font-weight: 100;
+}
+.jeremyReport h1{
+    margin: 10px 20px;
+    color: white;
+    font-weight: 300;
+}
+
+.reportTop{
+    height: 80%;
+    background-color:  hsl(246, 80%, 60%);
+    border-radius: 10px;
+    z-index: 1;
+    position: relative;
+    
+}
+.reportBottom{
+    background-color:  hsl(235, 46%, 20%);
+    height: 27%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    bottom: 22px
+    
+}
+
+.btn{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: hsl(235, 45%, 61%);
+    align-self: flex-start;
+    margin-left: 15px;
+    line-height: 12px;
+    z-index: 4;
+    padding: 5px 10px;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+.btn:hover, .btn:active{
+    color: white;
+}
+.content{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+   /* gap: 10px; */
+ 
+}
+.item{
+    width: 200px;
+    height: 200px;
+    /* outline: 1px solid black; */
+    /* margin: 10px; */
+    border-radius: 10px;
+    flex-grow: 1;
+    flex-basis: 30%;
+    margin: 10px;
+}
+.content-box:hover{
+    background-color:  hsl(228, 45%, 44%);
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+.work{
+    background-color:hsl(15, 100%, 70%);
+    overflow: hidden;
+}
+.work-content {
+    background-color: hsl(235, 46%, 20%);
+    position: relative;
+    top: -10%;
+    height: 85%;
+    border-radius: 10px;
+    color: white;
+    padding: 20px;
+}
+.card-h{
+    font-size: .9em;
+    font-weight: 100;
+    padding: 10px 0px;
+    color: white;
+}
+.current-hours{
+    font-size: 2.6em;
+    
+}
+.previous-hour{
+    padding: 5px 0px;
+    font-size: .8em;
+    color: hsl(235, 45%, 61%);
+}
+.icon{
+    width: 50px;
+    position: relative;
+    left: 60%;
+    top: -3%;
+}
+.play{
+    background-color: hsl(195, 74%, 62%);
+    overflow: hidden;
+}
+.play-content{
+    background-color: hsl(235, 46%, 20%);
+    position: relative;
+    top: -10%;
+    height: 85%;
+    border-radius: 10px;
+    color: white;
+    padding: 20px;
+}
+
+.study{
+    background-color:  hsl(348, 100%, 68%);
+    overflow: hidden;
+}
+.study-content{
+    background-color: hsl(235, 46%, 20%);
+    position: relative;
+    top: -10%;
+    height: 85%;
+    border-radius: 10px;
+    color: white;
+    padding: 20px;
+}
+
+.exercise{
+    background-color:  hsl(145, 58%, 55%);
+    overflow: hidden;
+}
+.exercise-content{
+    background-color:hsl(235, 46%, 20%);
+    position: relative;
+    top: -4%;
+    height: 85%;
+    border-radius: 10px;
+    color: white;
+    padding: 20px;
+}
+
+.social{
+    background-color: hsl(264, 64%, 52%);
+    overflow: hidden;
+}
+.social-content{
+    background-color:hsl(235, 46%, 20%);
+    position: relative;
+    top: -20%;
+    height: 85%;
+    border-radius: 10px;
+    color: white;
+    padding: 20px;
+}
+.selfCare{
+    background-color: hsl(43, 84%, 65%)
+    ;
+    overflow: hidden;
+}
+.selfCare-content{
+    background-color:hsl(235, 46%, 20%);
+    position: relative;
+    top: -10%;
+    height: 85%;
+    border-radius: 10px;
+    color: white;
+    padding: 20px;
+}
+.card-top{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.hamburgur-menu{
+    display: inline-block;
+    text-align: right;
+}
+.hamburger-icons{
+    cursor: pointer;
+    padding: 3px 0;
+    transition: 0.3s ease-in-out;
+}
+.hamburger-icons:hover{
+    color: hsl(235, 45%, 61%);
+}
+.hamburgur{
+    cursor: pointer;
+    color: wheat;
+}
+.hamburgur:hover{
+    color: white;
+}
+.reveal{
+    text-align: left;
+    position: relative;
+    bottom: 10px;
+    right: 10px;
+    height: 0px;
+    width: 40px;
+    /* overflow: hidden; */
+    transition: 0.5s ease-in-out;
+    line-height: 10px;
+    transform: translateX(80px);
+    
+
+}
+.hidden{
+    height: 40px;
+    right: 10px;
+    line-height: 10px;
+    transition: 0.5s ease-in-out;
+    transform: translateX(0px); 
+
+ }
+.reveal h4{
+    font-size: 12px;
+}
+.btn:active{
+    color: white;
+    transform: translateX(2px);
+}
+
+
+.TimeTrackingDashboard{
+    
+    position: absolute;
+    top: 40px;
+    color: hsl(235, 45%, 61%);
+    color:  hsl(235, 46%, 20%);
+    text-shadow: 0px 0px 3px hsl(236, 100%, 87%);
+    transition: opacity 1s ease-in-out;
+    opacity: 0.1;
+    transform: translateX(100px) scale(1.2);
+}
+.TimeTrackingDashboard.show{
+    transition: 1s ease-in-out;
+    opacity: 1;
+    transform: translateX(0) scale(1.2);
+
+}
+@media (max-width: 970px){
+    .container{
+        width: 95vw;
+    }
+    .item{
+        width: 250px;
+        height: 200px;
+        /* outline: 1px solid black; */
+        /* margin: 10px; */
+        border-radius: 10px;
+        flex-grow: 1;
+        flex-basis: 25%;
+        margin: 10px;
+    }
+    
+}
